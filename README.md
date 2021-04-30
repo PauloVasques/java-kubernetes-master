@@ -1,20 +1,8 @@
-# Java and Kubernetes
+# Java and Kubernetes Project for DIO
 
-Show how you can move your spring boot application to docker and kubernetes.
-This project is a demo for the series of posts on dev.to
-https://dev.to/sandrogiacom/kubernetes-for-java-developers-setup-41nk
-
-## Part one - base app:
-
-### Requirements:
-
-**Docker and Make (Optional)**
-
-**Java 15**
-
-Help to install tools:
-
-https://github.com/sandrogiacom/k8s
+Projeto desenvolvido para a plataforma DigitalInnovation One
+Abaixo requerimentos e instruções de como rodar a aplicação.
+As intruções foram criadas para uso em ambiente Linux.
 
 ### Build and run application:
 
@@ -47,7 +35,7 @@ http://localhost:8080/app/users
 
 http://localhost:8080/app/hello
 
-## Part two - app on Docker:
+## app on Docker:
 
 Create a Dockerfile:
 
@@ -88,18 +76,11 @@ Stop all:
 docker stop mysql57 myapp
 `
 
-## Part three - app on Kubernetes:
-
-We have an application and image running in docker
-Now, we deploy application in a kubernetes cluster running in our machine
-
-Prepare
-
 ### Start minikube
 `
 make k-setup
 `
- start minikube, enable ingress and create namespace dev-to
+start minikube, enable ingress and create namespace dev-to
 
 ### Check IP
 
@@ -261,7 +242,7 @@ curl --location --request POST 'http://dev.local/app/users' \
 }'
 `
 
-## Part four - debug app:
+## debug app:
 
 add   JAVA_OPTS: "-agentlib:jdwp=transport=dt_socket,address=*:5005,server=y,suspend=n"
  
