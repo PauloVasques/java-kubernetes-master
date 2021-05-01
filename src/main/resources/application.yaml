@@ -20,7 +20,7 @@ management:
   endpoints:
     web:
       exposure:
-        include: info,health,prometheus,metrics
+        include: info,health,zabbix,metrics
   health:
     probes:
       enabled: true

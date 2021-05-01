@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
-import one.digitalinnovation.kubernetes.persistence.UserRepository;
+import one.digitalinnovation.kubernetes.repository.UserRepository;
 
 @Service
 public class UserService {

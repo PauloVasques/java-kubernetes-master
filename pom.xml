@@ -12,7 +12,7 @@
     <artifactId>java-kubernetes</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>java-kubernetes</name>
-    <description>Java-Kubernets Project for DIO</description>
+    <description>Java-Kubernetes Project for DIO</description>
 
     <properties>
         <java.version>15</java.version>
@@ -57,8 +57,9 @@
             <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
         <dependency>
-            <groupId>io.micrometer</groupId>
-            <artifactId>micrometer-registry-prometheus</artifactId>
+            <groupId>io.github.hengyunabc</groupId>
+            <artifactId>zabbix-api</artifactId>
+            <version>0.0.2</version>
         </dependency>
     </dependencies>
     <build>
@@ -90,6 +91,8 @@
                     <compilerArgs>
                         <arg>--enable-preview</arg>
                     </compilerArgs>
+                    <source>15</source>
+                    <target>15</target>
                     <forceJavacCompilerUse>true</forceJavacCompilerUse>
                     <parameters>true</parameters>
                 </configuration>
@@ -145,14 +148,6 @@
                         <includeOnlyProperty>git.build.version</includeOnlyProperty>
                         <includeOnlyProperty>git.branch</includeOnlyProperty>
                     </includeOnlyProperties>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>15</source>
-                    <target>15</target>
                 </configuration>
             </plugin>
         </plugins>

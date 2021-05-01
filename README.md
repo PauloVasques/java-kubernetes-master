@@ -1,17 +1,14 @@
 # Java and Kubernetes Project for DIO
 
-Projeto desenvolvido para a plataforma DigitalInnovation One
+Projeto desenvolvido para a plataforma DigitalInnovation One.
+
 Abaixo requerimentos e instruções de como rodar a aplicação.
-As intruções foram criadas para uso em ambiente Linux.
+
+As instruções foram criadas para uso em ambiente Linux utilizando micro aplicações em Kubernetes.
 
 ### Build and run application:
 
 Spring boot and mysql database running on docker
-
-**Clone from repository**
-```bash
-git clone https://github.com/sandrogiacom/java-kubernetes.git
-```
 
 **Build application**
 ```bash
@@ -272,6 +269,8 @@ stern myapp
 
 
 ## References
+
+https://github.com/wesleyfuchter/cqrs-quarkus-kafka
 
 https://kubernetes.io/docs/home/
 

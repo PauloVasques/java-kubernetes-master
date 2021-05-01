@@ -35,11 +35,4 @@ spec:
                 path: /app/actuator/health/readiness
                 port: 8080
               initialDelaySeconds: 30
-            resources:
-              requests:
-                memory: "512Mi"
-                cpu: "0.5"
-              limits:
-                memory: "1024Mi"
-                cpu: "1"
 

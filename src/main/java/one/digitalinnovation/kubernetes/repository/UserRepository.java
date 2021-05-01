@@ -1,4 +1,4 @@
-package one.digitalinnovation.kubernetes.persistence;
+package one.digitalinnovation.kubernetes.repository;
 
 import one.digitalinnovation.kubernetes.domain.User;
 import org.springframework.data.repository.CrudRepository;
